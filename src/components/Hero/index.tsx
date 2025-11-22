@@ -29,7 +29,7 @@ export default function Hero() {
 					</motion.div>
 					<motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className={styles.right}>
 						<div className={styles.card}>
-							<img className={styles.cardFill} src="/public/main.png" alt="" />
+							<img className={styles.cardFill} src="/main.png" alt="" />
 						</div>
 						<div className={styles.badge}>
 							<div className={styles.badgeTitle}>Комплексные решения</div>

@@ -1,0 +1,220 @@
+.section {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+  }
+}
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.blobLarge,
+.blobSmall {
+  position: absolute;
+  border-radius: 9999px;
+  opacity: 0.2;
+  filter: blur(48px);
+  background-image: linear-gradient(
+    135deg,
+    var(--brand) 0%,
+    #ffb86b 50%,
+    #ffd9b3 100%
+  );
+}
+.blobLarge {
+  top: -14rem;
+  right: -8rem;
+  width: 20rem;
+  height: 20rem;
+}
+.blobSmall {
+  bottom: -14rem;
+  left: -8rem;
+  width: 18rem;
+  height: 18rem;
+}
+@media (min-width: 768px) {
+  .blobLarge {
+    width: 40rem;
+    height: 40rem;
+  }
+  .blobSmall {
+    width: 36rem;
+    height: 36rem;
+  }
+}
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+.left {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.title {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  font-size: clamp(1.5rem, 4vw, 2.75rem);
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.lead {
+  margin-top: 1rem;
+  color: var(--color-text-muted);
+  font-size: clamp(0.95rem, 1.5vw, 1.125rem);
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.ctaRow {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+.btnPrimary {
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+@media (min-width: 768px) {
+  .btnPrimary {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+.btnPrimary:hover {
+  background: var(--brand-dark);
+}
+.btnGhost {
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  background: transparent;
+  transition: border-color 0.15s ease;
+}
+@media (min-width: 768px) {
+  .btnGhost {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+.btnGhost:hover {
+  border-color: color-mix(in srgb, var(--color-text) 25%, var(--color-border));
+}
+.stats {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+@media (min-width: 768px) {
+  .stats {
+    gap: 1.5rem;
+  }
+}
+.statValue {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .statValue {
+    font-size: 1.5rem;
+  }
+}
+.right {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .right {
+    max-width: 85%;
+  }
+}
+.card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  max-width: 100%;
+}
+.cardFill {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 30% 20%,
+      color-mix(in srgb, var(--brand) 25%, transparent),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 60%,
+      rgba(168, 85, 247, 0.12),
+      transparent 40%
+    ),
+    linear-gradient(180deg, rgba(148, 163, 184, 0.08), transparent);
+}
+.badge {
+  position: absolute;
+  left: 0.5rem;
+  bottom: -2rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  max-width: calc(100% - 1rem);
+}
+@media (min-width: 768px) {
+  .badge {
+    left: -1.5rem;
+    bottom: -3rem;
+    transform: translate(1.5rem, -1.5rem);
+    max-width: none;
+  }
+}
+.badgeTitle {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+.badgeText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+

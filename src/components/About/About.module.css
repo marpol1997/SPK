@@ -1,0 +1,64 @@
+.section {
+  padding: 4rem 0;
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+.grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.title {
+  font-size: clamp(1.5rem, 2.3vw, 2rem);
+  font-weight: 700;
+}
+.text {
+  margin-top: 1rem;
+  color: var(--color-text-muted);
+  max-width: 65ch;
+}
+.features {
+  margin-top: 1.5rem;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  list-style: none;
+  cursor: pointer;
+}
+.chip {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+  overflow: hidden;
+}
+.ph {
+  background: var(--cards-bg);
+  border-radius: 0.75rem;
+  width: 100%;
+
+  
+}
+/* Для устранения «ступенек» делаем одинаковую высоту карточек */
+.phA,
+.phB,
+.phC,
+.phD {
+  aspect-ratio: 4 / 3;
+}

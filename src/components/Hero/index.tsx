@@ -16,6 +16,7 @@ export default function Hero() {
 						</h1>
 						<p className={styles.lead}>
 							ООО СПК: проектирование, строительство, производство и монтаж. Сроки, качество и безопасность — без компромиссов.
+							Умеем строить по картинкам!
 						</p>
 						<div className={styles.ctaRow}>
 							<a href="#contact" className={styles.btnPrimary}>Получить предложение</a>

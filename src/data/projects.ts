@@ -33,7 +33,7 @@ export const projects: Project[] = [
 			'https://avatars.mds.yandex.net/i?id=5372eea0cbd16ac022f1e5cc79061823_l-4904452-images-thumbs&n=13'
 		],
 		year: 2025,
-		location: 'Ленинградская область',
+		location: 'ЛНР,н.п. Славяносербск',
 		area: '22 км',
 		status: 'in-progress',
 		features: ['Реконструкция', 'Модернизация', 'Технадзор']

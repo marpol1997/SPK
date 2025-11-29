@@ -72,9 +72,9 @@ export default function Contact() {
 						<h2 className={styles.title}>Связаться с нами</h2>
 						<p className={styles.text}>Оставьте заявку — подготовим расчёт и предложим оптимальное решение.</p>
 						<div className={styles.info}>
-							<div>Тел.: +7 (000) 000-00-00</div>
-							<div>E-mail: info@spk.example</div>
-							<div>Адрес: г. Ваш город, ул. Примерная, 1</div>
+							<div>Тел.: +7 (978) 287-05-42</div>
+							<div>E-mail: info@spk.ru</div>
+							<div>Адрес: г.Москва наб. Деребеневская,д.11</div>
 						</div>
 					</div>
 					<form onSubmit={onSubmit} className={styles.card}>

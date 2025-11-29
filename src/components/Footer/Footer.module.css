@@ -1,9 +1,51 @@
-.footer { padding: 2.5rem 0; border-top: 1px solid var(--color-border); margin-top: 2rem; }
-.inner { display: flex; flex-direction: column; gap: 1rem; align-items: center; justify-content: space-between; font-size: .95rem; color: var(--color-text-muted); }
-@media (min-width: 768px) { .inner { flex-direction: row; } }
-.brand { display: flex; align-items: center; gap: .5rem; }
-.logo { width: 1.5rem; height: 1.5rem; border-radius: .375rem; background-image: linear-gradient(135deg, var(--brand) 0%, #ffb86b 50%, #ffd9b3 100%); }
-.brandText { color: var(--color-text); font-weight: 500; }
+.footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--color-border);
+  margin-top: 2rem;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+  }
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  background: 
+    repeating-linear-gradient(
+      -45deg,
+      #ff6b35,
+      #ff6b35 10px,
+      #ff8e35 10px,
+      #ff8e35 20px
+    );
+  position: relative;
+}
 
-
-
+.logo_text{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fbefef;
+}
+.brandText {
+  color: var(--color-text);
+  font-weight: 500;
+}

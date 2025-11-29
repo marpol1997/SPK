@@ -105,8 +105,9 @@ export default function Header() {
 				<div className="container">
 					<div className={styles.inner}>
 						<a href="#top" onClick={(e) => smoothScroll(e, '#top')} className={styles.brand}>
-							<div className={styles.logo} />
-							<span className={styles.brandText}>ООО СПК</span>
+							<div className={styles.logo}>
+								<p className={styles.logo_text}>ООО СПК</p>
+								</div>
 						</a>
 						
 						{/* Десктопная навигация */}

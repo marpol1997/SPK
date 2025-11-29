@@ -6,8 +6,8 @@ export default function Footer() {
 			<div className="container">
 				<div className={styles.inner}>
 					<div className={styles.brand}>
-						<div className={styles.logo} />
-						<span className={styles.brandText}>ООО СПК</span>
+						<div className={styles.logo}><p className={styles.logo_text}>ООО СПК</p></div>
+						
 					</div>
 					<div>© {new Date().getFullYear()} ООО «СПК». Все права защищены.</div>
 				</div>

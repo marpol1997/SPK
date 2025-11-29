@@ -31,15 +31,27 @@
   text-decoration: none;
 }
 .logo {
-  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
   height: 2rem;
   border-radius: 0.375rem;
-  background-image: linear-gradient(
-    135deg,
-    var(--brand) 0%,
-    #ffb86b 50%,
-    #ffd9b3 100%
-  );
+  background: 
+    repeating-linear-gradient(
+      -45deg,
+      #ff6b35,
+      #ff6b35 10px,
+      #ff8e35 10px,
+      #ff8e35 20px
+    );
+  position: relative;
+}
+
+.logo_text{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fbefef;
 }
 .brandText {
   font-weight: 600;
@@ -64,7 +76,7 @@
   font-size: 0.95rem;
 }
 .desktopNavLink:hover {
-  color: var(--color-text);
+  color: var(--brand)
 }
 .desktopCta {
   padding: 0.5rem 1rem;
